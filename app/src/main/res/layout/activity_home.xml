@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/background_color"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+
+
+    <include
+        android:id="@+id/toolbar_home"
+        layout="@layout/toolbar" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <android.widget.Button
+            android:id="@+id/xButtonAllJob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_design"
+            android:text="See All Job Post"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/white" />
+
+        <android.widget.Button
+            android:id="@+id/xButtonPostJob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_design"
+            android:text="Post A Job"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

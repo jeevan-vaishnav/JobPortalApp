@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".InsertJobPostActivity">
+
+    <include
+        android:id="@+id/xInsertJobPostToolbar"
+        layout="@layout/toolbar" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--Job Title-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!--                Text view for job title-->
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="7dp"
+                        android:text="Job Title:"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@color/black" />
+
+
+                </RelativeLayout>
+
+
+                <!--                //Edit text for job title-->
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3">
+
+                    <EditText
+                        android:id="@+id/xJobTitle_Post"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="7dp"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <!--Job Description-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!--                Text view for job title-->
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="7dp"
+                        android:text="Job Description:"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@color/black" />
+
+
+                </RelativeLayout>
+
+
+                <!--                //Edit text for job title-->
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3">
+
+                    <EditText
+                        android:id="@+id/xJobDesc_Post"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="7dp"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <!--Job Skill-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!--                Text view for job title-->
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="7dp"
+                        android:text="Skill:"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@color/black" />
+
+
+                </RelativeLayout>
+
+
+                <!--                //Edit text for job title-->
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3">
+
+                    <EditText
+                        android:id="@+id/xJobSkill_Post"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="7dp"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <!--Job Salary-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!--                Text view for job salary-->
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="7dp"
+                        android:text="Salary:"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@color/black" />
+
+
+                </RelativeLayout>
+
+
+                <!--//Edit text for job salary-->
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3">
+
+                    <EditText
+                        android:id="@+id/xJobSalary_Post"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="7dp"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <android.widget.Button
+                android:id="@+id/xJob_post_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:background="@drawable/job_post_button"
+                android:text="POST JOB"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
